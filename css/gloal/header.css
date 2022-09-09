@@ -1,0 +1,69 @@
+.header-bg {
+  background-color: var(--cor-12);
+}
+
+.header{
+  display: flex;
+  flex-wrap: wrap; /*menu quebrar pra baixo quando diminuir a tela*/
+  gap: 1.25rem;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box; /*valor do padding não somar com o max-width*/
+  padding: 1.25rem;
+  max-width: 75rem;
+  margin: auto auto;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+.header-menu a{
+  display: inline-block;
+  padding: 1rem 0rem;
+  font-size: 1.125rem;
+  position: relative;
+  font-family: 'poppins' ;
+  font-weight: 400;
+}
+
+.header-menu a:after{ /*Efeito no a*/
+  content: "";
+  display: block;
+  height: .125rem;
+  width: 0%;
+  background: var(--cor-0);
+  margin-top: .25rem;
+  transition: 0.3s;
+  position: absolute;
+}
+.header-menu a:hover:after{
+  width: 100%;
+}
+
+@media(max-width:50rem){
+  .header-menu{
+    gap: 1.25rem;
+  }
+  .header-menu a {
+    background: var(--cor-11);
+    padding: .75rem 1rem;
+    border-radius: .25rem;
+  }
+  .header-menu a:hover {
+    background-color: var(--cor-10);
+  }
+  .header-menu a:after{
+    display: none;
+  }
+}
+@media(max-width: 37.5rem ){
+  .header-menu{
+    gap: .75rem;
+  }
+  .header-menu a{
+    padding: .5rem .75rem;
+    font-size: .875rem;
+  }
+}

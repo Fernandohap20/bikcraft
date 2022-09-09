@@ -1,0 +1,15 @@
+@import "gloal/global.css";
+
+/*TIPOGRAFIA*/
+@import "utilidades/tipografia.css";
+
+/*CORES*/
+@import "utilidades/cores.css";
+
+@import "gloal/header.css";
+
+/*HOME*/
+@import "/css/home/introducao.css";
+
+/*UTILIDADES*/
+@import "utilidades/componentes.css";
