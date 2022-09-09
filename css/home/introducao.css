@@ -34,14 +34,6 @@
   margin-bottom: 1.25rem;
 }
 
-@media (max-width: 75rem ){
-  .introducao h1{
-    font-size: 3rem;
-  }
-  .introducao p {
-    font-size: 1.125rem;
-  }
-}
 
 @media (max-width: 50rem ){
   .introducao-bg{
@@ -57,11 +49,11 @@
     padding-bottom:0px ;
   }
   .introducao h1{
-    font-size: 2rem;
     margin-bottom: 1rem;
   }
   .introducao img{
     height: 300px;
     width: 100%;
   }
+  
 }
